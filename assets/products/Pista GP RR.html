@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pista GP RR</title>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous"></script>
+</head>
+<link rel="icon" href="../../images/logo_ok.ico" />
+<style>
+  /*字型*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&display=swap');
+  @import url(../../css/head.css);
+  @import url(../../css/product.css);
+  @import url(../../css/animation.css);
+
+  * {
+    font-family: 'Noto Serif TC', serif;
+    outline: none;
+  }
+</style>
+
+<body>
+  <div class="page">
+    <!--header_store-->
+    <div class="head">
+
+      <div class="head_logo">
+        <a href="../store_1.html"><img src="../../images/logo.png" style="height: 100px;width: 100px;" title="首頁"></a>
+      </div>
+
+      <div class="head_menu">
+        <div class="head_link">
+          <a href="../store_1.html" class="link" style="border-right: 1px #B2ACAC solid">進入賣場</a>
+          <a href="../class.html" class="link" style="border-right: 1px #B2ACAC solid">安駕小教室</a>
+          <a href="../about.html" class="link">關於我們</a>
+        </div>
+
+        <div class="head_icon">
+          <a href="../singin&register.html"><img src="../../images/會員_ok.png" title="會員登入"
+              style="margin-right: 15px;"></a>
+          <a href="../shopping-cart.html"><img src="../../images/購物車_ok.png" title="購物車"></a>
+        </div>
+        <span class=" signout"><i class="fas fa-sign-out-alt">登出</i></span>
+      </div>
+    </div>
+  </div>
+
+  <!--商品資訊-->
+  <div class="content">
+    <div class="insideleft">
+      <div>
+        <!--點擊商品會放大-->
+        <div style="position:fixed;width:100%;height:100%;z-index: 2;" id="modal" title="點擊離開預覽">
+          <div class="modal" id="modalw">
+            <img id="bgImg" />
+          </div>
+        </div>
+        <div title="點擊預覽">
+          <div>
+            <img onclick="showBgImg(this)" class="thum-img"
+              src="../../images/products/see/AGV/Pista GP RR/agv_helmets_pista_gprr_mplk_300x300.jpg">
+          </div>
+          <div class="box2" id="img1"><img
+              src="../../images/products/see/AGV/Pista GP RR/agv_pista_gpr_soleluna2018_helmet_300x300.jpg"
+              class=" thum-img" onclick="showBgImg(this)" />
+          </div>
+          <div class="box2" id="img2"><img
+              src="../../images/products/see/AGV/Pista GP RR/agv_helmets_pista_gprr_mplk_300x300.jpg" class=" thum-img"
+              onclick="showBgImg(this)" />
+          </div>
+          <div class="box2" id="img3"><img
+              src="../../images/products/see/AGV/Pista GP RR/agv_pista_gprr_carbon_performance_helmet_carbon_red_300x300.jpg"
+              class="thum-img" onclick="showBgImg(this)" />
+          </div>
+        </div>
+        <script>
+          var modal = document.getElementById("modal");
+          var bgImg = document.getElementById("bgImg");
+
+          function showBgImg(e) {
+            modal.style.display = "block";
+            bgImg.src = e.src;
+          }
+          bgImg.onclick = function () {
+            modal.style.display = "none";
+          }
+        </script>
+      </div>
+      <div>
+        <!--產品選項-->
+        <h1 class="h1_w">
+          Pista GP RR
+        </h1>
+        <p>
+          <div class="word1">
+            NT$ 7,800
+            <i class="fas fa-star star"> 4.9</i>
+          </div>
+        </p>
+        <p>
+          <div class="word">顏色選取：
+            <a href="#img1"> <button name="Pista GP RR_W" class="button_w">#1</button></a>
+            <a href="#img2"> <button name="Pista GP RR_B" class="button_w">#2</button></a>
+            <a href="#img3"> <button name="Pista GP RR_G" class="button_w">#3</button></a>
+          </div>
+        </p>
+        <p>
+          <div>
+            <!--有改這邊_1/2_new-->
+            <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+            <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+            <!--有改這邊_1/2_new-->
+          </div>
+        </p>
+        <p>
+          <div>
+            <button class="button_w" name="add to Shopping Cart" onclick="alert('已加入購物車')">加入購物車</button>
+            <button class="button_w button_pay" name="Checkout">直接結帳</button>
+          </div>
+        </p>
+        <br><br>
+      </div>
+    </div>
+    <!--產品說明-->
+    <!--有改這邊_1/2_new-->
+    <div class="content">
+      <div class="insideleft">
+        <p>
+          <hr>
+          <h1 class="word2">
+            產品說明
+          </h1>
+          <hr>
+          <div class="box1">
+            <div class="note_w">
+              <div class="note_w" style="font-weight: bold; text-align: center;">
+                Pista GP RR
+              </div>
+              此頂安全帽是為了MotoGP™選手專用的純種賽道帽。
+              為MotoGP™賽而生的競賽帽體，與世界冠軍一模一樣的帽子。經過最高規格「FIM」安全認證，PISTA為最高安全級別的帽體。
+              全帽最高級別性能，帽殼100%最高等級碳纖維，輕量化卻符合最嚴格的安全規範；五個金屬進風口與後方負壓排氣口，經過風洞實驗室與試車手賽道測試，達到通氣性與空氣力學最佳化，搭配RR版最新的PRO擾流鴨尾，高速行駛達到最小風阻與穩定性。
+              護目鏡採用最高安全規格防爆鏡片，厚度5mm，有微開系統，寬闊的190度全景視野，讓您在競賽或道路皆能洞察先機。
+              內襯具有360度調整系統「AF內襯調整系統」(Adaptive Fit System)，可自行調整內襯，達到任何頭型皆能服貼穩定的效果，讓騎士能專注在騎乘表現上。
+              每個細節都為了追求勝利而設計
+              這就是癡迷的美好。
+
+            </div>
+            <p>
+              <img class="notebox" src="../../images/products/note/PISTA_GP_RR.png">
+            </p>
+          </div>
+        </p>
+      </div>
+      <div class="insideleft">
+        <form>
+          <fieldset>
+            <legend class="h1_w">留言板</legend>
+            <textarea style="width: 1200px;height: 200px;" name="msg" rows="5"></textarea><br>
+            <span class="h1_w">
+              <!--1/7有動過-->
+              評分: <input type="number" name="star" max="5" min="1" value="5" class="button_w"
+                style="margin-right: 10px;"><span style="color: gold;"><i class="fas fa-star"></i></span>
+            </span>
+            <br>
+            <button name="output" class="button_w">留言</button>
+          </fieldset>
+          <hr>
+          <div>
+            <div class="msg">
+              <div class="msg_img">
+              </div>
+              <div class="mag__body">
+                <div class="msg__info">
+                  <span class="msg__author">巴巴</span>
+                  <span class="msg__time">2020-12-26
+                    <span style="color: gold;"><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      <i class="fas fa-star "></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></span>
+
+                </div>
+                <p class="msg__content">
+                  咪咪咪！
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+
+        <img src="../../images/logo_index.png" style="width: 80px;height: 80px;float: left;margin-left: 20px;">
+        <div style="text-align: center; float: left;margin-top: 35px;margin-left: 430px;">
+          我愛貓貓，貓貓愛我
+        </div>
+        <div style="text-align: center; float: right;margin-top: 5px;margin-right: 20px;">
+          中原大學資訊管理學系<br>
+          320桃園市中壢區中原大學<br>
+          Tel: 03 265 9999<br>
+          https://www1.cycu.edu.tw/
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>

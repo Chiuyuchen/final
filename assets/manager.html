@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager</title>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous"></script>
+</head>
+<link rel="icon" href="../images/logo_ok.ico" />
+<style>
+  /*字型*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&display=swap');
+  @import url(../css/manager.css);
+  @import url(../../css/animation.css);
+
+  * {
+    font-family: 'Noto Serif TC', serif;
+    outline: none;
+  }
+</style>
+
+<body>
+  <div class="page">
+    <!--header_store-->
+    <div class="head">
+
+      <div class="head_logo">
+        <a href="store_1.html"><img src="../images/logo.png" title="開始帽險"></a>
+      </div>
+
+      <div class="head_menu">
+        <div class="head_link">
+
+          <a href="store_1.html" class="link" style="border-right: 1px #B2ACAC solid">進入賣場</a>
+          <a href="class.html" class="link" style="border-right: 1px #B2ACAC solid">安駕小教室</a>
+          <a href="about.html" class="link">關於我們</a>
+        </div>
+
+        <div class="head_icon">
+          <a href="singin&register.html"><img src="../images/會員_ok.png" title="會員登入" style="margin-right: 15px;"></a>
+          <a href="shopping-cart.html"><img src="../images/購物車_ok.png" title="購物車"></a>
+        </div>
+        <span class=" signout"><i class="fas fa-sign-out-alt">登出</i></span>
+      </div>
+
+    </div>
+  </div>
+
+  <!--會員登入-->
+  <div class=" content">
+    <div class=" insideleft">
+      <p>
+        <h1 class=" h1_w">管理者登入</h1>
+      </p>
+      <hr class="hr1">
+      <div class=" c_w">
+        辛巴您好！歡迎登入！
+        <br>
+      </div>
+
+      <div>
+        <table border="1" style="text-align: center;">
+
+          <thead style="text-align: center;">
+            <tr>
+              <td class="td_1">NO.1</td>
+              <td class="td_2">Pista GP RR</td>
+              <td class="td_3">1</td>
+              <td class="td_4">16,500</td>
+              <td class="td_5">16,500</td>
+              <td>
+                <button name="cancel" class=" c_w_text1"
+                  onclick="window.location.href = 'manager_change.html';">修改</button>
+                <button name="cancel" class=" c_w_text1">刪除</button>
+              </td>
+            </tr>
+          </thead>
+        </table>
+        <hr class="hr1">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

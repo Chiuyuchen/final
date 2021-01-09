@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signin/Register</title>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous"></script>
+</head>
+<link rel="icon" href="../images/logo_ok.ico" />
+<style>
+  /*字型*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&display=swap');
+  @import url(../css/Sginin_Register.css);
+  @import url(../../css/animation.css);
+
+  * {
+    font-family: 'Noto Serif TC', serif;
+    outline: none;
+  }
+</style>
+
+<body>
+  <div class="page">
+    <!--header_store-->
+    <div class="head">
+
+      <div class="head_logo">
+        <a href="store_1.html"><img src="../images/logo.png" title="開始帽險"></a>
+      </div>
+
+      <div class="head_menu">
+        <div class="head_link">
+          <a href="store_1.html" class="link" style="border-right: 1px #B2ACAC solid">進入賣場</a>
+          <a href="class.html" class="link" style="border-right: 1px #B2ACAC solid">安駕小教室</a>
+          <a href="about.html" class="link">關於我們</a>
+        </div>
+
+        <div class="head_icon">
+          <a href="singin&register.html"><img src="../images/會員_ok.png" title="會員登入" style="margin-right: 15px;"></a>
+          <a href="shopping-cart.html"><img src="../images/購物車_ok.png" title="購物車"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--會員登入-->
+  <div class="content">
+    <div class="insideleft">
+      <div class="box_bg">
+        <div class="body_text">
+          <!--登入畫面-->
+          <div class="singin_w ">
+            Sign in 登入
+          </div>
+          <p>
+            <input class="e_w_text " type="text" placeholder="Email" size="20" autocomplete="off" name="Email">
+          </p>
+          <p>
+            <input class="e_w_text " type="password" placeholder="Password" autocomplete="off" name="Password">
+          </p>
+          <p>
+            <button class="e_w_text" onclick="window.location.href = 'member profile.html';" name="singin">登入</button>
+          </p>
+          <div>
+            <!--幻燈片-->
+            <div class="list">
+              <li class="one"></li>
+              <li class="two"></li>
+              <li class="three"></li>
+              <li class="four"></li>
+            </div>
+          </div>
+          <div class="singin_w ">
+            Register 註冊
+          </div>
+          <p>
+            <input class="e_w_text " type="text" placeholder="Name 名字" size="20" autocomplete="off" name="Name">
+          </p>
+          <p>
+            <input class="e_w_text " type="text" placeholder="Email 電子信箱" size="20" autocomplete="off"
+              name=" Register_Email">
+          </p>
+          <p>
+            <input class="e_w_text " type="password" placeholder="password 輸入密碼" autocomplete="off"
+              name="Register_password">
+          </p>
+          <p>
+            <input class="e_w_text " type="password" placeholder="password 確認密碼" autocomplete="off"
+              name="Register_repassword">
+          </p>
+
+          <p>
+            <input class="e_w_text " type="date" name="Date">
+            <span class="e_w_text">出生年月日</span>
+          </p>
+          <p>
+            <input class="e_w_text " type="text" placeholder="居住地址" size="20" name=" location">
+          </p>
+
+
+          <p>
+            <button class="e_w_text" name="singin" onclick="alert('資料已送出，可以直接登入了！')">註冊</button>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

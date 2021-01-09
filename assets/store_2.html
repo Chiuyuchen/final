@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" type="text/css" href="css/ad.css" />
+<link rel="icon" href="../images/logo_ok.ico" />
+<style>
+  /*字型*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&display=swap');
+
+
+  @import url(../css/slide-show.css);
+
+  @import url(../css/store-menu.css);
+  @import url(../css/store.css);
+  @import url(../css/store-bg.css);
+
+  /*header_store*/
+  * {
+    font-family: 'Noto Serif TC', serif;
+    outline: none;
+  }
+
+  /*右側邊選單
+  <!--2021.1.5 new-->*/
+  .stay-right {
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    height: auto;
+    z-index: 3;
+  }
+
+  .side-menu-2 {
+    width: 300px;
+    height: 750px;
+    margin-left: 180px;
+    box-sizing: border-box;
+    /* background-color: lightgray;*/
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 10px gray;
+    position: fixed;
+
+  }
+
+  .btn-x {
+    width: 25px;
+    height: 25px;
+    border-radius: 360px;
+    opacity: 0.5;
+    text-align: center;
+    outline: none;
+  }
+</style>
+
+<body>
+  <!--進入賣場頁面-->
+
+  <div class="page">
+    <!--上方導航開始-->
+    <div class="head">
+
+      <div class="head_logo">
+        <a href="index.html"><img src="../images/logo.png" title="點擊進入帽險王首頁"></a>
+      </div>
+
+      <div class="head_menu">
+        <div class="head_link">
+          <a href="#goodgoods" class="link" style="border-right: 1px #B2ACAC solid">進入賣場</a>
+          <a href="class.html" class="link" style="border-right: 1px #B2ACAC solid">安駕小教室</a>
+          <a href="about.html" class="link">關於我們</a>
+        </div>
+
+        <div class="head_icon">
+          <a href="singin&register.html"><img src="../images/會員_ok.png" title="會員登入" style="margin-right: 15px;"></a>
+          <a href="shopping-cart.html"><img src="../images/購物車_ok.png" title="購物車"></a>
+        </div>
+        <span class=" signout"><i class="fas fa-sign-out-alt">登出</i></span>
+      </div>
+
+
+
+    </div>
+    <!--上方導航結束-->
+
+    <!--動態廣告 開始-->
+    <!--1/7有動過-->
+    <div class="slideshow-container" style="margin-top: 120px">
+
+      <div class="myslides fade">
+        <div class="numbertext"></div>
+        <a href="/assets/products/K5.html">
+          <img src="../images/hot/4.jpg" style=" width:1000px;">
+        </a>
+        <!--<div class="text">人氣商品第一名</div>-->
+      </div>
+
+      <div class="myslides fade">
+        <div class="numbertext"></div>
+        <a href="/assets/products/Spartan.html">
+          <img src="../images/hot/5.jpg" style=" width:1000px;">
+        </a>
+        <!--<div class="text">人氣商品第二名</div>-->
+      </div>
+
+    </div>
+    <br>
+    <!-- The dots/circles -->
+
+
+    <!--動態廣告JS-->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("myslides"); /*抓有mySlides*/
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; /*讓圖片消失*/
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        } /*讓圖片循環*/
+        slides[slideIndex - 1].style.display = "block"; /*顯示圖片*/
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+      }
+    </script>
+    <!--動態廣告 結束-->
+
+
+    <!--所有產品開始-->
+
+    <div class="allmenu">
+
+      <div class="menubox">
+        <h1><a id="goodgoods">
+            所有商品
+          </a></h1>
+        <div class="photo-container-1">
+
+          <div class="photo-card">
+            <a href="products/Race R Pro.html"><img src="../images/products/SHARK/Race R Pro/shark_race_r_pro4.jpg"
+                title="點擊查看商品"></a>
+
+            <div class="img-description">
+              <p class="goods-name">Race R Pro</p>
+              <p class="goods-price">NT$ 7,800</p>
+              <br>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <a href="products/SF-2.html"><img src="../images/products/SOL/SF-2/SOL_SF2_3.jpg" title="點擊查看商品"></a>
+
+            <div class="img-description">
+              <p class="goods-name">SF-2</p>
+              <p class="goods-price">NT$ 7,800</p>
+              <br>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <a href="products/SF-3.html"><img src="../images/products/SOL/SF-3/SOL_SF3_5.jpg" title="點擊查看商品"></a>
+
+            <div class="img-description">
+              <p class="goods-name">SF-3</p>
+              <p class="goods-price">NT$ 7,800</p>
+              <br>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="photo-container-1">
+
+          <div class="photo-card">
+            <a href="products/SF-6.html"><img src="../images/products/SOL/SF-6/SOL_SF6_3.jpg" title="點擊查看商品"></a>
+
+            <div class="img-description">
+              <p class="goods-name">SF-6</p>
+              <p class="goods-price">NT$ 7,800</p>
+              <br>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <a href="products/68SII.html"><img src="../images/products/SOL/68SII/SOL_68SII_1.jpg" title="點擊查看商品"></a>
+
+            <div class="img-description">
+              <p class="goods-name">68SII</p>
+              <p class="goods-price">NT$ 7,800</p>
+              <br>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <!--有改這邊_1231_new-->
+            <a href="products/recoder.html"><img src="../images/products/EX/recoder.png" title="點擊查看商品"></a>
+
+
+            <div class="img-description">
+              <p class="goods-name">行車紀錄器</p>
+              <p class="goods-price">NT$ 7,800</p>
+              <br>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="photo-container-1">
+
+          <div class="photo-card">
+            <a href="products/earphone.html"><img src="../images/products/EX/earphone.png" title="點擊查看商品"></a>
+
+            <div class="img-description">
+              <p class="goods-name">耳機</p>
+              <p class="goods-price">NT$ 7,800</p>
+              <br>
+            </div>
+          </div>
+
+          <div class="photo-card">
+            <a href="products/raincoat.html"><img src="../images/products/EX/raincoat.jpg" title="點擊查看商品"></a>
+
+            <div class="img-description">
+              <p class="goods-name">雨衣</p>
+              <p class="goods-price">NT$ 7,800</p>
+              <br>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+    <!--所有產品結束-->
+
+
+    <!--分頁開始-->
+    <div class="pagination">
+      <a href="store_1.html"><i class="fas fa-angle-double-left"></i></a>
+      <a href="store_1.html">1</a>
+      <a href="store_2.html">2</a>
+      <a href="store_2.html"><i class="fas fa-angle-double-right"></i></a>
+    </div>
+    <!--分頁結束-->
+
+  </div>
+
+  <!--右側邊欄開始-->
+  <!--2021.1.6 new-->
+  <div class="stay-right">
+    <div class="side-menu-2">
+
+      <img src="../images/AD1.jpg" style="width: 300px;height: 150PX;">
+      <img src="../images/SALE2.gif" style="width: 300px;height: 150PX;">
+      <img src="../images/SHOEIAD3.jpg" style="width: 300px;height:90PX;">
+      <img src="../images/HONDA4.jpg" style="width: 300px;height: 380PX;">
+    </div>
+  </div>
+  <!--右側邊欄結束-->
+  <!--側邊欄開始-->
+  <div class="stay-left">
+
+    <input type="checkbox" id="side-menu-switch">
+
+    <div class="side-menu">
+      <form>
+        <input type="search" placeholder="請輸入關鍵字">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+
+      <ul class="nav">
+
+        <ul>
+          <h2>AGV</h2>
+          <li><a href="products/K1.html">K1</a></li>
+          <li><a href="products/K3SV.html">K3SV</a></li>
+          <li><a href="products/K5.html">K5</a></li>
+          <li><a href="products/Pista GP RR.html">Pista GP RR</a></li>
+        </ul>
+
+        <ul>
+          <h2>SHOEI</h2>
+          <li><a href="products/x14.html">x14</a></li>
+          <li><a href="products/RF-1200.html">RF-1200</a></li>
+          <li><a href="products/GT-Air II.html">GT-Air II</a></li>
+        </ul>
+        <ul>
+          <h2>Shark</h2>
+          <li><a href="products/Skwal 2.html">Skwal 2</a></li>
+          <li><a href="products/Spartan.html">Spartan</a></li>
+          <li><a href="products/Race R Pro.html">Race R Pro</a></li>
+        </ul>
+        <ul>
+          <h2>SOL</h2>
+          <li><a href="products/SF-2.html">SF-2</a></li>
+          <li><a href="products/SF-3.html">SF-3</a></li>
+          <li><a href="products/SF-6.html">SF-6</a></li>
+          <li><a href="products/68SII.html">68SII</a></li>
+        </ul>
+
+        <ul>
+          <h2>騎士配件</h2>
+          <li><a href="products/recoder.html">行車紀錄器</a></li>
+          <li><a href="products/earphone.html">耳機</a></li>
+          <li><a href="products/raincoat.html">雨衣</a></li>
+        </ul>
+
+      </ul>
+
+      <label for="side-menu-switch">
+        <i class="fas fa-angle-right"></i>
+      </label>
+    </div>
+  </div>
+  <!--側邊欄結束-->
+
+
+</body>
+
+</html>

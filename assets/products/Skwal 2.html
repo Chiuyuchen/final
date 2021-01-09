@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skwal 2</title>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous"></script>
+</head>
+<link rel="icon" href="../../images/logo_ok.ico" />
+<style>
+  /*字型*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&display=swap');
+  @import url(../../css/head.css);
+  @import url(../../css/product.css);
+  @import url(../../css/animation.css);
+
+  * {
+    font-family: 'Noto Serif TC', serif;
+    outline: none;
+  }
+</style>
+
+<body>
+  <div class="page">
+    <!--header_store-->
+    <div class="head">
+
+      <div class="head_logo">
+        <a href="../store_1.html"><img src="../../images/logo.png" style="height: 100px;width: 100px;" title="首頁"></a>
+      </div>
+
+      <div class="head_menu">
+        <div class="head_link">
+          <a href="../store_1.html" class="link" style="border-right: 1px #B2ACAC solid">進入賣場</a>
+          <a href="../class.html" class="link" style="border-right: 1px #B2ACAC solid">安駕小教室</a>
+          <a href="../about.html" class="link">關於我們</a>
+        </div>
+
+        <div class="head_icon">
+          <a href="../singin&register.html"><img src="../../images/會員_ok.png" title="會員登入"
+              style="margin-right: 15px;"></a>
+          <a href="../shopping-cart.html"><img src="../../images/購物車_ok.png" title="購物車"></a>
+        </div>
+        <span class=" signout"><i class="fas fa-sign-out-alt">登出</i></span>
+      </div>
+    </div>
+  </div>
+
+  <!--商品資訊-->
+  <div class="content">
+    <div class="insideleft">
+      <div>
+        <!--點擊商品會放大-->
+        <div style="position:fixed;width:100%;height:100%;z-index: 2;" id="modal" title="點擊離開預覽">
+          <div class="modal" id="modalw">
+            <img id="bgImg" />
+          </div>
+        </div>
+        <div title="點擊預覽">
+          <img onclick="showBgImg(this)" class="thum-img"
+            src="../../images/products/see/shark/Skwal 2/shark_skwal2_noxxys_helmet_750x750.jpg">
+        </div>
+
+        <script>
+          var modal = document.getElementById("modal");
+          var bgImg = document.getElementById("bgImg");
+
+          function showBgImg(e) {
+            modal.style.display = "block";
+            bgImg.src = e.src;
+          }
+          bgImg.onclick = function () {
+            modal.style.display = "none";
+          }
+        </script>
+      </div>
+      <div>
+        <!--產品選項-->
+        <h1 class="h1_w">
+          Skwal 2
+        </h1>
+        <p>
+          <div class="word1">
+            NT$ 7,800
+            <i class="fas fa-star star"> 4.9</i>
+          </div>
+        </p>
+        <p>
+          <div class="word">顏色選取：
+            <a href="#img1"> <button name="Skwal 2" class="button_w">#1</button></a>
+          </div>
+        </p>
+        <p>
+          <div>
+            <!--有改這邊_1/2_new-->
+            <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+            <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+            <!--有改這邊_1/2_new-->
+          </div>
+        </p>
+        <p>
+          <div>
+            <button class="button_w" name="add to Shopping Cart" onclick="alert('已加入購物車')">加入購物車</button>
+            <button class="button_w button_pay" name="Checkout">直接結帳</button>
+          </div>
+        </p>
+        <br><br>
+      </div>
+    </div>
+    <!--產品說明-->
+    <!--有改這邊_1/2_new-->
+    <div class="content">
+      <div class="insideleft">
+        <p>
+          <hr>
+          <h1 class="word2">
+            產品說明
+          </h1>
+          <hr>
+          <div class="box1">
+            <div class="note_w">
+              <div class="note_w" style="font-weight: bold; text-align: center;">
+                Skwal 2
+              </div>
+              擁有全新的內部裝潢，配有可充電LED燈，可在道路上提供更高的視野。SKWAL 2 有鮮明的外觀，其擾流板的纖薄運動型設計，再加上空氣動力學優化特性，使其成為運動和性能開發的頭盔。
+            </div>
+            <p>
+              <img class="notebox" src="../../images/products/note/Skwal 2.jpg">
+            </p>
+          </div>
+        </p>
+      </div>
+      <div class="insideleft">
+        <form>
+          <fieldset>
+            <legend class="h1_w">留言板</legend>
+            <textarea style="width: 1200px;height: 200px;" name="msg" rows="5"></textarea><br>
+            <span class="h1_w">
+              <!--1/7有動過-->
+              評分: <input type="number" name="star" max="5" min="1" value="5" class="button_w"
+                style="margin-right: 10px;"><span style="color: gold;"><i class="fas fa-star"></i></span>
+            </span>
+            <br>
+            <button name="output" class="button_w">留言</button>
+          </fieldset>
+          <hr>
+          <div>
+            <div class="msg">
+              <div class="msg_img">
+              </div>
+              <div class="mag__body">
+                <div class="msg__info">
+                  <span class="msg__author">巴巴</span>
+                  <span class="msg__time">2020-12-26
+                    <span style="color: gold;"><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                      <i class="fas fa-star "></i><i class="fas fa-star "></i><i class="fas fa-star"></i></span></span>
+
+                </div>
+                <p class="msg__content">
+                  咪咪咪！
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+
+        <img src="../../images/logo_index.png" style="width: 80px;height: 80px;float: left;margin-left: 20px;">
+        <div style="text-align: center; float: left;margin-top: 35px;margin-left: 430px;">
+          我愛貓貓，貓貓愛我
+        </div>
+        <div style="text-align: center; float: right;margin-top: 5px;margin-right: 20px;">
+          中原大學資訊管理學系<br>
+          320桃園市中壢區中原大學<br>
+          Tel: 03 265 9999<br>
+          https://www1.cycu.edu.tw/
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>

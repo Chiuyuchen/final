@@ -21,6 +21,14 @@
     font-family: 'Noto Serif TC', serif;
     outline: none;
   }
+   <script>
+    function showNum(e) {
+      var num = e.id;
+      for (i = 1; i <= num; i++) {
+        document.getElementById(i).style.color = "yellow";
+      }
+    };
+  </script>
 </style>
 
 <body>
@@ -139,9 +147,12 @@
             <fieldset>
               <legend class="h1_w">留言板</legend>
               <textarea style="width: 1200px;height: 200px;" name="msg" rows="5"></textarea><br>
-              <span class="h1_w">
-                評分: <input type="number" name="star" max="5" min="1" value="5" class="button_w"
-                  style="margin-right: 10px;"><span style="color: gold;"><i class="fas fa-star"></i></span>
+               <span class="h1_w">
+                評分: <i id="1" onclick="showNum(this)" class="fas fa-star"></i>
+                <i id="2" onclick="showNum(this)" class="fas fa-star"></i>
+                <i id="3" onclick="showNum(this)" class="fas fa-star"></i>
+                <i id="4" onclick="showNum(this)" class="fas fa-star"></i>
+                <i id="5" onclick="showNum(this)" class="fas fa-star"></i>
               </span>
               <br>
               <button name="output" class="button_w">留言</button>

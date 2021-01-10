@@ -187,6 +187,12 @@ div:target {
   display: block;
 }
 
+
+.h1_w i {
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
 .signout {
   font-size: 30px;
   outline: none;
